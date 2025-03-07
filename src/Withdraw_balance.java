@@ -4,7 +4,7 @@ class BankAccount1 {
     private String accountHolderName;
     private double balance;
 
-    // Constructor
+
     public BankAccount1(String accountHolderName, double initialBalance) {
         this.accountHolderName = accountHolderName;
         this.balance = initialBalance;
@@ -18,7 +18,7 @@ class BankAccount1 {
         } else if (amount > balance) {
             System.out.println("Insufficient balance. Available balance: ₹" + balance);
         } else {
-            System.out.println("Invalid withdrawal amount.");
+            System.out.println("Invalid withdrawal .");
         }
     }
 
@@ -30,7 +30,7 @@ class BankAccount1 {
 
 public class Withdraw_balance {
     public static void main(String[] args) {
-        BankAccount account = new BankAccount("Monkey D. Luffy", 5000.0);
+        BankAccount account = new BankAccount("name", 5000.0);
 
 
         System.out.println("Available Balance: ₹" + account.getBalance());
